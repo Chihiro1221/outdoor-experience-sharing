@@ -1,0 +1,4 @@
+<navigation-bar title="相关声明" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<view class="statement">
+  <rich-text nodes="{{nodes}}"/>
+</view>

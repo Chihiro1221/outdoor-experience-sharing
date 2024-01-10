@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<navigation-bar title="首页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="main">
+  <!-- 创建经验分享帖子 -->
+  <view class="create-btn" bind:tap="gotoCreateTopic">
+    ＋
+  </view>
+  <view class="item" wx:for="{{topicList}}" wx:key="index" bind:tap="gotoTopic" data-id="{{item.id}}">
+    <view class="con">
+        <image mode="aspectFill" class="cover" src="{{item.cover_img}}" alt=""/>
+        <view class="text-con">
+          <view class="title">{{item.title}}</view>
+          <view class="footer">
+          <view class="user-con">
+            <image class="avatar" src="{{item.user.avatar}}" alt=""/>
+            <text class="nickname">{{item.user.nickname}}</text>
+          </view>
+        </view>
+    </view>
+    </view>
+  </view>
+</view>

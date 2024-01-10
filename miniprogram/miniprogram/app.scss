@@ -1,0 +1,12 @@
+/**app.wxss**/
+page{
+  padding-bottom: 80px;
+}
+
+
+.text_small_1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

@@ -1,0 +1,26 @@
+<view class="user">
+  <navigation-bar title="个人中心" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+  <view class="user-con">
+    <image class="avatar" src="{{userInfo.avatar}}" mode=""/>
+    <!-- <text class="nickname">{{userInfo.nickname}}</text> -->
+    <view class="cell" style="margin-top:20px">
+      <view class="label">昵称</view>
+      <view class="phone">{{userInfo.nickname}}</view>
+    </view>
+    <view class="cell">
+      <view class="label">手机号</view>
+      <view class="phone">{{userInfo.phone}}</view>
+    </view>
+    <view class="cell">
+      <view class="label">问题反馈</view>
+      <view class="phone">2213221311@163.com</view>
+    </view>
+    <view class="cell" bind:tap="gotoStatement">
+      <view class="label">相关声明</view>
+      <image class="icon-arrow" src="../../icons/arrow-right.png" mode=""/>
+    </view>
+    <view class="cell" bind:tap="logout">
+      <view class="label">退出登录</view>
+    </view>
+  </view>
+</view>

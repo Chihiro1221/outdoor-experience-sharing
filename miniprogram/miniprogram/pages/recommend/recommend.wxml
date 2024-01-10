@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<navigation-bar title="好物推荐" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="recommend">
+  <view class="goods-item" wx:for="{{goodsList}}" key:key="index">
+    <image mode="aspectFill" src="{{item.cover_img}}" mode=""/>
+    <view class="goods-info">
+      <view class="name">{{item.goods_name}}</view>
+      <view class="description text_small_1">{{item.description}}</view>
+      <view class="operation">
+        <view class="price">￥{{item.price}}</view>
+        <view class="preview" data-id="{{item.id}}" bind:tap="gotoDetail">查看</view>
+      </view>
+    </view>
+  </view>
+</view>

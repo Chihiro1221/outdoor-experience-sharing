@@ -1,0 +1,8 @@
+<navigation-bar title="商品详情页" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<view class="recommend-detail">
+  <image class="cover" mode="aspectFit" src="{{goodsDetail.cover_img}}" mode=""/>
+  <view class="info-con">
+    <view class="title">{{goodsDetail.goods_name}}</view>
+    <rich-text class="content" nodes="{{goodsDetail.description}}"/>
+  </view>
+</view>

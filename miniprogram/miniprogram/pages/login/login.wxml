@@ -1,0 +1,12 @@
+<!--pages/register/register.wxml-->
+<view class="login">
+  <view class="form-container">
+  <view class="title">用户登录</view>
+    <form catchsubmit="formSubmit">
+      <input type="number" class="phone-input" name="phone" placeholder="请输入手机号" />
+      <input password type="safe-password" class="password-input" name="password" placeholder="请输入密码" />
+      <view class="tip" bind:tap="gotoRegister">还没有账号？去注册</view>
+      <button type="primary" class="submit-btn" form-type="submit">登录</button>
+    </form>
+  </view>
+</view>

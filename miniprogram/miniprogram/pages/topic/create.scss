@@ -1,0 +1,17 @@
+/* pages/topic/create.wxss */
+.create-topic{
+  padding: 10px;
+  .page-section-title{
+    font-size: 18px;
+  }
+  .weui-input{
+    border-bottom: 1px solid #eee;
+    padding:0 0 10px 0;
+  }
+  .textarea-con{
+    border: 1px solid #eee;
+  }
+  .submit-btn{
+    width: 100%;
+  }
+}

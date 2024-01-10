@@ -1,0 +1,12 @@
+<navigation-bar title="经验分享页" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<view class="topic">
+  <image class="cover" mode="widthFix" src="{{topic.cover_img}}" mode=""/>
+  <view class="info-con">
+    <view class="title">{{topic.title}}</view>
+    <view class="author">
+      <image class="avatar" src="{{topic.user.avatar}}" mode=""/>
+      <text class="nickname">{{topic.user.nickname}}</text>
+    </view>
+    <rich-text class="content" nodes="{{topic.content}}"/>
+  </view>
+</view>

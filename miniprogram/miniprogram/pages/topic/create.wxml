@@ -1,0 +1,41 @@
+
+<view class="create-topic">
+  <navigation-bar title="创建经验分享" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+
+  <form catchsubmit="formSubmit">
+      <view class="page-section">
+        <view class="page-section-title">标题</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input name="title" value="{{formData.title}}" bindinput="onInput" class="weui-input" name="input" placeholder="请输入标题" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">内容</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <!-- <input class="weui-input" name="input" placeholder="请输入内容" /> -->
+              <textarea name="content" value="{{formData.content}}" bindinput="onTextareaInput" class="textarea-con" placeholder="请输入内容"></textarea>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <button bind:tap="chooseImgae" size="mini" type="primary" data-type="upload" data-count="1">上传封面</button>
+              <image name="cover_img" wx:if="{{formData.cover_img}}" src="{{formData.cover_img}}" mode=""/>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button class="submit-btn" loading="{{isLoading}}" style="margin: 30rpx 0" type="primary" formType="submit">创建</button>
+      </view>
+    </form>
+</view>

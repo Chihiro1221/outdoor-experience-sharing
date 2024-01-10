@@ -1,0 +1,45 @@
+.recommend{
+  display: flex;
+  flex-direction: column;
+  .goods-item{
+    border: 1px solid #eee;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    // align-items: center;
+    image{
+      width: 120px;
+      height: 120px;
+    }
+    .goods-info{
+      max-width: 200px;
+      flex:1;
+      margin-left: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .name{
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .description{
+        color:rgb(59, 59, 59);
+      }
+      .operation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price{
+          color:rgb(59, 59, 59);
+        }
+        .preview{
+          padding: 4px 10px;
+          background-color: #55ac68;
+          color:white;
+          border-radius: 4px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

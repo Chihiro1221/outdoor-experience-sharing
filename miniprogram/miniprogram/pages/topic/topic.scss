@@ -1,0 +1,28 @@
+.topic{
+  .cover{
+    width: 100%;
+    min-height: 350px;
+  }
+  .info-con{
+    padding: 8px;
+    .title{
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .author{
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 4px;
+      .avatar{
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+      }
+      .nickname{
+        font-size: 16px;
+      }
+    }
+  }
+}
